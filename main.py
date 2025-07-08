@@ -1,5 +1,5 @@
 def sum_pair(array):
-    array = list(map(str, array))
+    array = list(map(lambda x: str(abs(x)), array))
     h = {}
     for i in array:
         if len(i) > 2:
